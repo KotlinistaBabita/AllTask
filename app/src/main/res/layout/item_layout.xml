@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="6dp"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="@color/colorPrimaryContainer"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvNAme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvGeneration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Generation: "
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvNAme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Price: "
+            app:layout_constraintTop_toBottomOf="@id/tvGeneration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCapacity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Capacity: "
+            app:layout_constraintTop_toBottomOf="@id/tvPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvScreenSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Screen Size: "
+            app:layout_constraintTop_toBottomOf="@id/tvCapacity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            app:layout_constraintTop_toBottomOf="@id/tvScreenSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Color: "
+            app:layout_constraintTop_toBottomOf="@id/tvDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStrapColour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Strap Colour: "
+            app:layout_constraintTop_toBottomOf="@id/tvColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCaseSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Case Size: "
+            app:layout_constraintTop_toBottomOf="@id/tvStrapColour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Year: "
+            app:layout_constraintTop_toBottomOf="@id/tvCaseSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCpuModel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CPU Model: "
+            app:layout_constraintTop_toBottomOf="@id/tvYear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHardDiskSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hard Disk Size: "
+            app:layout_constraintTop_toBottomOf="@id/tvCpuModel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCapacityGB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Capacity GB: "
+            app:layout_constraintTop_toBottomOf="@id/tvHardDiskSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvCapacityGB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
